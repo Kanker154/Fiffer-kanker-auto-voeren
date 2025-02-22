@@ -189,7 +189,7 @@ elseif game.PlaceId == 5232896677 then
 end
 local infoPage = Venyx:addPage("Information", 8356778308)
 local discordSection = infoPage:addSection("Discord")
-discordSection:addButton(syn and "Fiffer exploits fakka met die hassan" or "Hassan", function()
+discordSection:addButton(syn and "Fiffer exploits fakka met die hassan" or "Fiffer exploits fakka met die hassan", function()
 	if syn then
 		syn.request({
 			Url = "",
