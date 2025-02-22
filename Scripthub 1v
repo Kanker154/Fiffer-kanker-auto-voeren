@@ -1,0 +1,87 @@
+
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Fiffer script hub",
+    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+    LoadingTitle = "Fakka met die hassan",
+    LoadingSubtitle = "by Fakka met die hassan",
+    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+ 
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+ 
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Fiffer Script Hub"
+    },
+ 
+    Discord = {
+       Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+ 
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Fiffer script hub",
+       Subtitle = "Voer het kankerwachtwoord in kanker boef",
+       Note = "Krijg je niet kanker hoer", -- Use this to tell the user how to get a key
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"https://pastebin.com/raw/8bHR16ea"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+ local MainTab = Window:CreateTab("Fiffer scripts", "rewind")
+
+
+ local Button = MainTab:CreateButton({
+    Name = "Je kanker auto opvoeren",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Fiffer'))()
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
+    Name = "Fiffer trol menu fling enzo",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
+    Name = "Fiffer admin menu (NIET DE ECHT ADMIN MENU (DUS PAS OP))",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Fiffer%20admin'))()
+    end,
+ })
+
+
+ local Button = MainTab:CreateButton({
+    Name = "Aimbot omdat je kanker scheef bent kanker hoere kind",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Kanker%20aimbot%20kanker%20noob'))()
+    end,
+ })
+
+
+ local Button = MainTab:CreateButton({
+   Name = "Twiter Bericht (Risco) ",
+   Callback = function()
+      game.ReplicatedStorage.TwitterPost:FireServer("Fiffer Script hub + Fakka met die hassan")
+   end,
+})
+
+ local Tab2 = Window:CreateTab("Werkt wss niet in die kanker fiffer wel in andere roleplay games of games met ACS", "rewind")
+
+
+ local Button = Tab2:CreateButton({
+   Name = "allahu akbar",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Biem%20acs%20games'))()
+   end,
+})
