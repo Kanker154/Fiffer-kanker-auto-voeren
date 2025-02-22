@@ -70,6 +70,15 @@ local Window = Rayfield:CreateWindow({
 
 
  local Button = MainTab:CreateButton({
+   Name = "Fling all KANKER",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Fiffer%20fling%20all'))()
+   end,
+})
+
+
+
+ local Button = MainTab:CreateButton({
    Name = "Twiter Bericht (Risco) ",
    Callback = function()
       game.ReplicatedStorage.TwitterPost:FireServer("Fiffer Script hub + Fakka met die hassan")
@@ -97,7 +106,7 @@ local Button = Tab2:CreateButton({
 local Button = Tab2:CreateButton({
    Name = "Teleport Bank",
    Callback = function()
-      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-530.980164, 2.1995976, 1533.8905, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-474.1137390136719, 12.114235877990723, 1561.6077880859375)
    end,
 })
 
@@ -158,3 +167,11 @@ local Button = Tab2:CreateButton({
    end,
 })
 
+ local Tab3 = Window:CreateTab("Fiffer Guis openen", "rewind")
+
+ local Button = Tab2:CreateButton({
+   Name = "Wapen Dealer gui openen",
+   Callback = function()
+      
+   end,
+})
