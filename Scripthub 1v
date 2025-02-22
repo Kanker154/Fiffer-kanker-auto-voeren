@@ -119,10 +119,42 @@ local Button = Tab2:CreateButton({
 local Button = Tab2:CreateButton({
    Name = "Teleport Car Tune Shop",
    Callback = function()
-      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2691.814208984375, 11.276910781860352, -4295.76953125
-   )
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2691.814208984375, 11.276910781860352, -4295.76953125)
    end,
 })
 
+local Button = Tab2:CreateButton({
+   Name = "Teleport Police Staion",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2174.43896484375, 12.161382675170898, -4104.98974609375)
+   end,
+})
 
+local Button = Tab2:CreateButton({
+   Name = "Teleport PMK Loction",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(397.4338684082031, 12.542182922363281, -4697.28125)
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Teleport Lab Loction",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3131.12255859375, 12.58114242553711, 1567.477294921875)
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Teleport GangHuis 1",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3563.845703125, 11.781852722167969, 2564.589599609375)
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Teleport GangHuis 2",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1132.185791015625, 12.108402252197266, 3380.641357421875)
+   end,
+})
 
