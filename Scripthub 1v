@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
        RememberJoins = true -- Set this to false to make them join the discord every time they load it up
     },
  
-    KeySystem = true, -- Set this to true to use our key system
+    KeySystem = false, -- Set this to true to use our key system
     KeySettings = {
        Title = "Fiffer script hub",
        Subtitle = "Voer het kankerwachtwoord in kanker boef",
@@ -76,12 +76,53 @@ local Window = Rayfield:CreateWindow({
    end,
 })
 
- local Tab2 = Window:CreateTab("Werkt wss niet in die kanker fiffer wel in andere roleplay games of games met ACS", "rewind")
+ local Tab2 = Window:CreateTab("Fiffer teleport", "rewind")
 
 
  local Button = Tab2:CreateButton({
-   Name = "allahu akbar",
+   Name = "Teleport Spawn",
    Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Biem%20acs%20games'))()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(13.3893604, 2.25595236, 879.557129, -1, 0, 0, 0, 1, 0, 0, 0, -1)
    end,
 })
+
+
+local Button = Tab2:CreateButton({
+   Name = "Teleport Ambulance of ziekenhuis",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(408.989594, 6.8566184, 1765.89697, 0.987663805, -0.0041577667, 0.156534031, 0.00410354976, 0.999991357, 0.000669523724, -0.156535462, -1.89192651e-05, 0.987672329)
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Teleport Bank",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-530.980164, 2.1995976, 1533.8905, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Teleport Witwas loction",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.6874695, 2.29471469, -319.907349, -1.1920929e-07, 0, 1.00000012, 0, 1, 0, -1.00000012, 0, -1.1920929e-07)
+   end,
+})
+
+
+local Button = Tab2:CreateButton({
+   Name = "Teleport Wapen Dealer",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1106.6219482421875, 11.875547409057617, 3815.462890625)
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Teleport Car Tune Shop",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2691.814208984375, 11.276910781860352, -4295.76953125
+   )
+   end,
+})
+
+
+
