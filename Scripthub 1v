@@ -27,8 +27,8 @@ local Window = Rayfield:CreateWindow({
     KeySystem = false, -- Set this to true to use our key system
     KeySettings = {
        Title = "Fiffer script hub",
-       Subtitle = "Voer het kankerwachtwoord in kanker boef",
-       Note = "Krijg je niet kanker hoer", -- Use this to tell the user how to get a key
+       Subtitle = "Voer het wachtwoord in",
+       Note = "Discord | Krijgjeniet", -- Use this to tell the user how to get a key
        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
        SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
@@ -40,7 +40,7 @@ local Window = Rayfield:CreateWindow({
 
 
  local Button = MainTab:CreateButton({
-    Name = "Je kanker auto opvoeren",
+    Name = "Je Auto Opvoeren",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Fiffer'))()
     end,
@@ -54,7 +54,7 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = MainTab:CreateButton({
-    Name = "Fiffer admin menu (NIET DE ECHT ADMIN MENU (DUS PAS OP))",
+    Name = "Fiffer admin menu (",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Fiffer%20admin'))()
     end,
@@ -62,7 +62,7 @@ local Window = Rayfield:CreateWindow({
 
 
  local Button = MainTab:CreateButton({
-    Name = "Aimbot omdat je kanker scheef bent kanker hoere kind",
+    Name = "Aimbot",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Kanker%20aimbot%20kanker%20noob'))()
     end,
@@ -70,7 +70,7 @@ local Window = Rayfield:CreateWindow({
 
 
  local Button = MainTab:CreateButton({
-   Name = "Fling all KANKER",
+   Name = "Fling all",
    Callback = function()
        loadstring(game:HttpGet('https://raw.githubusercontent.com/Kanker154/Fiffer-kanker-auto-voeren/refs/heads/main/Fiffer%20fling%20all'))()
    end,
@@ -81,7 +81,7 @@ local Window = Rayfield:CreateWindow({
  local Button = MainTab:CreateButton({
    Name = "Twiter Bericht (Risco) ",
    Callback = function()
-      game.ReplicatedStorage.TwitterPost:FireServer("Fiffer Script hub + Fakka met die hassan")
+      game.ReplicatedStorage.TwitterPost:FireServer("Fiffer Script hub")
    end,
 })
 
@@ -167,11 +167,56 @@ local Button = Tab2:CreateButton({
    end,
 })
 
- local Tab3 = Window:CreateTab("Fiffer Guis openen", "rewind")
+ local Tab3 = Window:CreateTab("ACS SCRIPTS WERKT NIET IN ELKE GAME", "rewind")
 
- local Button = Tab2:CreateButton({
-   Name = "Wapen Dealer gui openen",
+ local Button = Tab3:CreateButton({
+   Name = "Kill all | Kan je in de killogs zien",
    Callback = function()
+      game:GetService('ReplicatedStorage')['ACS_Engine'].Eventos.Damage:FireServer(game.Players.LocalPlayer.Character.Humanoid, math.huge, 0, 0)
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "Heal je zelf",
+   Callback = function()
+      game:GetService('ReplicatedStorage')['ACS_Engine'].Eventos.Damage:FireServer(game.Players.LocalPlayer.Character.Humanoid, -50, 0, 0)
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "God mode",
+   Callback = function()
+      game:GetService('ReplicatedStorage')['ACS_Engine'].Eventos.Damage:FireServer(game.Players.LocalPlayer.Character.Humanoid, -math.huge, 0, 0)
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "God mode",
+   Callback = function()
+      game:GetService('ReplicatedStorage')['ACS_Engine'].Eventos.Damage:FireServer(game.Players.LocalPlayer.Character.Humanoid, -math.huge, 0, 0)
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "Lag Server",
+   Callback = function()
+      game:GetService('ReplicatedStorage')['ACS_Engine'].Eventos.Breach:FireServer(3,{Fortified={},Destroyable=workspace},CFrame.new(),CFrame.new(),{CFrame={},Size={}})
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "Build",
+   Callback = function()
+      local cFrame = CFrame.new(0,0,0)
+
+
+local Size = {
+  X = 1000,
+  Y = 1000,
+  Z = 1000
+}
+
+game:GetService('ReplicatedStorage')['ACS_Engine'].Eventos.Breach:FireServer(3,{Fortified={},Destroyable=workspace},CFrame.new(),CFrame.new(),{CFrame=game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*cFrame,Size=Size})
       
    end,
 })
