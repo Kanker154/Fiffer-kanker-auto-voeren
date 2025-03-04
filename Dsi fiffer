@@ -1,0 +1,12 @@
+local player = game:GetService("Players").LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local gui = playerGui:WaitForChild("DSIUI") -- Zorgt ervoor dat de GUI geladen is
+
+-- Controleer of het een ScreenGui of een Frame is
+if gui:IsA("ScreenGui") then
+    gui.Enabled = true -- Verbergt de GUI
+elseif gui:IsA("Frame") then
+    gui.Visible = false -- Verbergt de Frame
+else
+    warn("DSITeamer is geen ScreenGui of Frame!") -- Foutmelding als het iets anders is
+end
