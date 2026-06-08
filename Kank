@@ -1,0 +1,185 @@
+local G2L = {};
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[KeySytemCeqNeuktJOuwKankerHArdKK]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(57, 57, 57);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Size"] = UDim2.new(0.3, 100, 0.3, 100);
+G2L["2"]["Position"] = UDim2.new(0.5, 5, 0.5, 5);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[MAIN]];
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.Eneter
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["4"]["Size"] = UDim2.new(0.4, 0, 0.15, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Enter Key]];
+G2L["4"]["Name"] = [[Eneter]];
+G2L["4"]["Position"] = UDim2.new(0.2807, 0, 0.8, 0);
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.Eneter.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+G2L["5"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.Eneter.UITextSizeConstraint
+G2L["6"] = Instance.new("UITextSizeConstraint", G2L["4"]);
+G2L["6"]["MaxTextSize"] = 20;
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.MainTitle
+G2L["7"] = Instance.new("TextLabel", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["7"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[Ceq keys]];
+G2L["7"]["Name"] = [[MainTitle]];
+G2L["7"]["Position"] = UDim2.new(0.5, 0, 0.1, 2);
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.MainTitle.UITextSizeConstraint
+G2L["8"] = Instance.new("UITextSizeConstraint", G2L["7"]);
+G2L["8"]["MaxTextSize"] = 25;
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.Get
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["9"]["Size"] = UDim2.new(0.4, 0, 0.15, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Get key]];
+G2L["9"]["Name"] = [[Get]];
+G2L["9"]["Position"] = UDim2.new(0.7193, 1, 0.8, 0);
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.Get.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+G2L["a"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.Get.UITextSizeConstraint
+G2L["b"] = Instance.new("UITextSizeConstraint", G2L["9"]);
+G2L["b"]["MaxTextSize"] = 20;
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.UIDragDetector
+G2L["c"] = Instance.new("UIDragDetector", G2L["2"]);
+
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.KeyEnter
+G2L["d"] = Instance.new("TextBox", G2L["2"]);
+G2L["d"]["CursorPosition"] = -1;
+G2L["d"]["Name"] = [[KeyEnter]];
+G2L["d"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(103, 103, 103);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["d"]["PlaceholderText"] = [[Key ....]];
+G2L["d"]["Size"] = UDim2.new(0.7, 0, 0.2, 0);
+G2L["d"]["Position"] = UDim2.new(0.5, 0, 0.4, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[]];
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.KeyEnter.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+G2L["e"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.KeyEnter.UITextSizeConstraint
+G2L["f"] = Instance.new("UITextSizeConstraint", G2L["d"]);
+G2L["f"]["MaxTextSize"] = 20;
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.MainTitle
+G2L["10"] = Instance.new("TextLabel", G2L["2"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["10"]["Size"] = UDim2.new(0.3, 0, 0.1, 0);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[Ceq___]];
+G2L["10"]["Name"] = [[MainTitle]];
+G2L["10"]["Position"] = UDim2.new(0.5, 0, 0.9, 10);
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.MainTitle.UITextSizeConstraint
+G2L["11"] = Instance.new("UITextSizeConstraint", G2L["10"]);
+G2L["11"]["MaxTextSize"] = 25;
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.KeySytemCeqNeuktJOuwKankerHArdKK.MAIN.LocalScript
+local function C_12()
+local script = G2L["12"];
+	local Key = "KankerSouf"
+	
+	local Frame = script.Parent
+	local TextBox = Frame.KeyEnter
+	local Button = Frame.Eneter
+	local getKey = Frame.Get
+	
+	
+	if TextBox and Button then
+		Button.MouseButton1Click:Connect(function()
+			if TextBox.Text == Key then
+				print("test")
+			else
+				warn("Wrong key")
+				return
+			end
+		end)
+	end
+end;
+task.spawn(C_12);
+
+return G2L["1"], require;
