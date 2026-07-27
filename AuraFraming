@@ -1,0 +1,697 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 43 | Scripts: 1 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.UI
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[UI]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.UI.Container
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Size"] = UDim2.new(0.3, 0, 0.6, 0);
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Container]];
+
+
+-- StarterGui.UI.Container.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0.08, 0);
+
+
+-- StarterGui.UI.Container.UIGradient
+G2L["4"] = Instance.new("UIGradient", G2L["2"]);
+G2L["4"]["Rotation"] = 4;
+G2L["4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(160, 160, 160))};
+
+
+-- StarterGui.UI.Container.UIStroke
+G2L["5"] = Instance.new("UIStroke", G2L["2"]);
+G2L["5"]["Thickness"] = 0.01;
+G2L["5"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["5"]["Color"] = Color3.fromRGB(75, 75, 75);
+
+
+-- StarterGui.UI.Container.UIStroke.UIGradient
+G2L["6"] = Instance.new("UIGradient", G2L["5"]);
+G2L["6"]["Rotation"] = 90;
+G2L["6"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(160, 160, 160))};
+
+
+-- StarterGui.UI.Container.UIDragDetector
+G2L["7"] = Instance.new("UIDragDetector", G2L["2"]);
+G2L["7"]["Enabled"] = false;
+-- [ERROR] cannot convert BoundingUI, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
+
+-- StarterGui.UI.Container.Code
+G2L["8"] = Instance.new("TextBox", G2L["2"]);
+G2L["8"]["Name"] = [[Code]];
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+G2L["8"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["ClearTextOnFocus"] = false;
+G2L["8"]["PlaceholderText"] = [[Code..]];
+G2L["8"]["Size"] = UDim2.new(0.57004, 0, 0.10648, 0);
+G2L["8"]["Position"] = UDim2.new(0.12159, 0, 0.19938, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[]];
+
+
+-- StarterGui.UI.Container.Code.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+G2L["9"]["CornerRadius"] = UDim.new(0.3, 0);
+
+
+-- StarterGui.UI.Container.Code.UITextSizeConstraint
+G2L["a"] = Instance.new("UITextSizeConstraint", G2L["8"]);
+G2L["a"]["MaxTextSize"] = 30;
+
+
+-- StarterGui.UI.Container.Code.UIStroke
+G2L["b"] = Instance.new("UIStroke", G2L["8"]);
+G2L["b"]["Thickness"] = 0.1;
+G2L["b"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["b"]["Color"] = Color3.fromRGB(75, 75, 75);
+G2L["b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.UI.Container.Code.UIStroke.UIGradient
+G2L["c"] = Instance.new("UIGradient", G2L["b"]);
+G2L["c"]["Rotation"] = 90;
+G2L["c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(160, 160, 160))};
+
+
+-- StarterGui.UI.Container.TextLabel
+G2L["d"] = Instance.new("TextLabel", G2L["2"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["RichText"] = true;
+G2L["d"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["d"]["Size"] = UDim2.new(0.75426, 0, 0.05093, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Note: Only works with the 'Sns Pistol' Weapon <b>must</b> be equipped.]];
+G2L["d"]["Position"] = UDim2.new(0.49653, 0, 0.83407, 0);
+
+
+-- StarterGui.UI.Container.Delay
+G2L["e"] = Instance.new("TextBox", G2L["2"]);
+G2L["e"]["Name"] = [[Delay]];
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+G2L["e"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["ClearTextOnFocus"] = false;
+G2L["e"]["PlaceholderText"] = [[0]];
+G2L["e"]["Size"] = UDim2.new(0.14077, 0, 0.10648, 0);
+G2L["e"]["Position"] = UDim2.new(0.7333, 0, 0.19938, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[]];
+
+
+-- StarterGui.UI.Container.Delay.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+G2L["f"]["CornerRadius"] = UDim.new(0.3, 0);
+
+
+-- StarterGui.UI.Container.Delay.UITextSizeConstraint
+G2L["10"] = Instance.new("UITextSizeConstraint", G2L["e"]);
+G2L["10"]["MaxTextSize"] = 30;
+
+
+-- StarterGui.UI.Container.Delay.UIStroke
+G2L["11"] = Instance.new("UIStroke", G2L["e"]);
+G2L["11"]["Thickness"] = 0.1;
+G2L["11"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["11"]["Color"] = Color3.fromRGB(75, 75, 75);
+G2L["11"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.UI.Container.Delay.UIStroke.UIGradient
+G2L["12"] = Instance.new("UIGradient", G2L["11"]);
+G2L["12"]["Rotation"] = 90;
+G2L["12"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(160, 160, 160))};
+
+
+-- StarterGui.UI.Container.TextLabel
+G2L["13"] = Instance.new("TextLabel", G2L["2"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["RichText"] = true;
+G2L["13"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["13"]["Size"] = UDim2.new(0.14251, 0, 0.02932, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Delay (s)]];
+G2L["13"]["Position"] = UDim2.new(0.80512, 0, 0.14109, 0);
+
+
+-- StarterGui.UI.Container.TextLabel
+G2L["14"] = Instance.new("TextLabel", G2L["2"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["RichText"] = true;
+G2L["14"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["14"]["Size"] = UDim2.new(0.57004, 0, 0.02932, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[Personal code]];
+G2L["14"]["Position"] = UDim2.new(0.40777, 0, 0.14109, 0);
+
+
+-- StarterGui.UI.Container.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.UI.Container.Frame
+G2L["16"] = Instance.new("Frame", G2L["2"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["Size"] = UDim2.new(0.74904, 0, 0.08796, 0);
+G2L["16"]["Position"] = UDim2.new(0.12333, 0, 0.35, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.UI.Container.Frame.KillAll
+G2L["17"] = Instance.new("TextButton", G2L["16"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextScaled"] = true;
+G2L["17"]["TextColor3"] = Color3.fromRGB(207, 207, 207);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+G2L["17"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 434, 0, 57);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Kill All (once)]];
+G2L["17"]["Name"] = [[KillAll]];
+G2L["17"]["Visible"] = false;
+G2L["17"]["Position"] = UDim2.new(0.12159, 0, 0.37531, 0);
+
+
+-- StarterGui.UI.Container.Frame.KillAll.UICorner
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
+G2L["18"]["CornerRadius"] = UDim.new(0.3, 0);
+
+
+-- StarterGui.UI.Container.Frame.KillAll.UIStroke
+G2L["19"] = Instance.new("UIStroke", G2L["17"]);
+G2L["19"]["Thickness"] = 0.1;
+G2L["19"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["19"]["Color"] = Color3.fromRGB(75, 75, 75);
+G2L["19"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.UI.Container.Frame.KillAll.UIStroke.UIGradient
+G2L["1a"] = Instance.new("UIGradient", G2L["19"]);
+G2L["1a"]["Rotation"] = 90;
+G2L["1a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(160, 160, 160))};
+
+
+-- StarterGui.UI.Container.Frame.KillAll.UITextSizeConstraint
+G2L["1b"] = Instance.new("UITextSizeConstraint", G2L["17"]);
+G2L["1b"]["MaxTextSize"] = 30;
+
+
+-- StarterGui.UI.Container.Frame.LoopKill
+G2L["1c"] = Instance.new("TextButton", G2L["16"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["TextColor3"] = Color3.fromRGB(207, 72, 72);
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+G2L["1c"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c"]["Size"] = UDim2.new(0, 434, 0, 57);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Loop kill]];
+G2L["1c"]["Name"] = [[LoopKill]];
+G2L["1c"]["Visible"] = false;
+G2L["1c"]["Position"] = UDim2.new(0.12159, 0, 0.51975, 0);
+
+
+-- StarterGui.UI.Container.Frame.LoopKill.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+G2L["1d"]["CornerRadius"] = UDim.new(0.3, 0);
+
+
+-- StarterGui.UI.Container.Frame.LoopKill.UIStroke
+G2L["1e"] = Instance.new("UIStroke", G2L["1c"]);
+G2L["1e"]["Thickness"] = 0.1;
+G2L["1e"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["1e"]["Color"] = Color3.fromRGB(75, 75, 75);
+G2L["1e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.UI.Container.Frame.LoopKill.UIStroke.UIGradient
+G2L["1f"] = Instance.new("UIGradient", G2L["1e"]);
+G2L["1f"]["Rotation"] = 90;
+G2L["1f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(160, 160, 160))};
+
+
+-- StarterGui.UI.Container.Frame.LoopKill.UITextSizeConstraint
+G2L["20"] = Instance.new("UITextSizeConstraint", G2L["1c"]);
+G2L["20"]["MaxTextSize"] = 30;
+
+
+-- StarterGui.UI.Container.Frame.BeebServer
+G2L["21"] = Instance.new("TextButton", G2L["16"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["TextColor3"] = Color3.fromRGB(207, 207, 207);
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+G2L["21"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["21"]["Size"] = UDim2.new(0, 434, 0, 57);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Beeb Server]];
+G2L["21"]["Name"] = [[BeebServer]];
+G2L["21"]["Visible"] = false;
+G2L["21"]["Position"] = UDim2.new(0.12333, 0, 0.66451, 0);
+
+
+-- StarterGui.UI.Container.Frame.BeebServer.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["21"]);
+G2L["22"]["CornerRadius"] = UDim.new(0.3, 0);
+
+
+-- StarterGui.UI.Container.Frame.BeebServer.UIStroke
+G2L["23"] = Instance.new("UIStroke", G2L["21"]);
+G2L["23"]["Thickness"] = 0.1;
+G2L["23"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["23"]["Color"] = Color3.fromRGB(75, 75, 75);
+G2L["23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.UI.Container.Frame.BeebServer.UIStroke.UIGradient
+G2L["24"] = Instance.new("UIGradient", G2L["23"]);
+G2L["24"]["Rotation"] = 90;
+G2L["24"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(160, 160, 160))};
+
+
+-- StarterGui.UI.Container.Frame.BeebServer.UITextSizeConstraint
+G2L["25"] = Instance.new("UITextSizeConstraint", G2L["21"]);
+G2L["25"]["MaxTextSize"] = 30;
+
+
+-- StarterGui.UI.Container.Frame.UIListLayout
+G2L["26"] = Instance.new("UIListLayout", G2L["16"]);
+G2L["26"]["Padding"] = UDim.new(0, 20);
+G2L["26"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.UI.Container.Frame.Ragdoll
+G2L["27"] = Instance.new("TextButton", G2L["16"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["TextColor3"] = Color3.fromRGB(207, 207, 207);
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+G2L["27"]["FontFace"] = Font.new([[rbxassetid://16658221428]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["27"]["Size"] = UDim2.new(0, 434, 0, 57);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[Ragdoll Players]];
+G2L["27"]["Name"] = [[Ragdoll]];
+G2L["27"]["Visible"] = false;
+G2L["27"]["Position"] = UDim2.new(0.12159, 0, 0.51975, 0);
+
+
+-- StarterGui.UI.Container.Frame.Ragdoll.UICorner
+G2L["28"] = Instance.new("UICorner", G2L["27"]);
+G2L["28"]["CornerRadius"] = UDim.new(0.3, 0);
+
+
+-- StarterGui.UI.Container.Frame.Ragdoll.UIStroke
+G2L["29"] = Instance.new("UIStroke", G2L["27"]);
+G2L["29"]["Thickness"] = 0.1;
+G2L["29"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["29"]["Color"] = Color3.fromRGB(75, 75, 75);
+G2L["29"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.UI.Container.Frame.Ragdoll.UIStroke.UIGradient
+G2L["2a"] = Instance.new("UIGradient", G2L["29"]);
+G2L["2a"]["Rotation"] = 90;
+G2L["2a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(160, 160, 160))};
+
+
+-- StarterGui.UI.Container.Frame.Ragdoll.UITextSizeConstraint
+G2L["2b"] = Instance.new("UITextSizeConstraint", G2L["27"]);
+G2L["2b"]["MaxTextSize"] = 30;
+
+
+-- StarterGui.UI.Container.LocalScript
+local function C_15()
+local script = G2L["15"];
+	local code = ""
+	local delayy = 0
+	
+	local eventsFolder = game.ReplicatedStorage.ACSEngine:FindFirstChild("{780928cb-98e7-4088-b05b-d80d5e31baca}")
+	local damageEvent = game:GetService("ReplicatedStorage").Core.Functions.Ambulance.GetRespawnPlayer
+	local weaponName = "Sns Pistol"
+	local weaponData = {
+		SlideLock = true,
+		Type = "Gun",
+		ShootType = 1,
+		Bullets = 1,
+		CrosshairOffset = 0,
+		Ammo = 14,
+		EnableHUD = true,
+		DamageFallOf = 2,
+		ShootRate = 700,
+		IgnoreProtection = false,
+		SlideEx = CFrame.new(0, 0, -0.30000001192092896, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+		Tracer = false,
+		FireModes = {
+			Auto = false,
+			ChangeFiremode = false,
+			Burst = false,
+			Semi = false
+		},
+		LimbDamage = {
+			22,
+			26
+		},
+		CanBreachDoor = false,
+		MaxStoredAmmo = 1/0,
+		IncludeChamberedBullet = true,
+		Zoom = 70,
+		EnableZeroing = false,
+		OtherAtt = "",
+		canAim = true,
+		UnderBarrelAtt = "",
+		AimRecoilReduction = 1,
+		TracerColor = Color3.new(1, 1, 1),
+		TracerEveryXShots = 3,
+		CenterDot = false,
+		ZeroIncrement = 50,
+		CanBreak = false,
+		BulletPenetration = 50.5,
+		CanCheckMag = true,
+		MaxZero = 500,
+		RecoilPowerStepAmount = 0.1,
+		MinRecoilPower = 1,
+		TorsoDamage = {
+			34,
+			38
+		},
+		ShellInsert = false,
+		MinDamage = 5,
+		gunRecoil = {
+			gunRecoilTilt = {
+				40,
+				50
+			},
+			gunRecoilUp = {
+				34,
+				40
+			},
+			gunRecoilLeft = {
+				10,
+				20
+			},
+			gunRecoilRight = {
+				10,
+				20
+			}
+		},
+		BurstShot = 3,
+		HeadDamage = {
+			120,
+			120
+		},
+		MuzzleVelocity = 1000,
+		gunName = "Sns Pistol",
+		WalkMult = 0,
+		MaxRecoilPower = 1.5,
+		MaxSpread = 0,
+		CrossHair = false,
+		AmmoInGun = 14,
+		AimSpreadReduction = 1,
+		AimInaccuracyDecrease = 1,
+		camRecoil = {
+			camRecoilUp = {
+				5,
+				8
+			},
+			camRecoilRight = {
+				5,
+				8
+			},
+			camRecoilLeft = {
+				5,
+				8
+			},
+			camRecoilTilt = {
+				10,
+				15
+			}
+		},
+		BulletType = ".45 ACP",
+		RandomTracer = {
+			Enabled = false,
+			Chance = 25
+		},
+		Zoom2 = 70,
+		MagCount = true,
+		InfraRed = false,
+		AimInaccuracyStepAmount = 5.75,
+		CurrentZero = 0,
+		BulletFlare = false,
+		BarrelAtt = "",
+		RainbowMode = false,
+		MinSpread = 0,
+		StoredAmmo = 1/0,
+		BulletDrop = 0.25,
+		SightAtt = "",
+		Jammed = false
+	}
+	local modTable = {
+		SpreadRM = 1,
+		RecoilPowerStepAmount = 1,
+		Zoom2Value = 70,
+		MaxSpread = 1,
+		MinRecoilPower = 1,
+		DamageMod = 1,
+		minDamageMod = 1,
+		MaxRecoilPower = 1,
+		AimInaccuracyStepAmount = 1,
+		WalkMult = 1,
+		AimRM = 1,
+		gunRecoilMod = {
+			RecoilRight = 1,
+			RecoilUp = 1,
+			RecoilTilt = 1,
+			RecoilLeft = 1
+		},
+		MuzzleVelocity = 1,
+		ZoomValue = 70,
+		MinSpread = 1,
+		AimInaccuracyDecrease = 1,
+		camRecoilMod = {
+			RecoilRight = 1,
+			RecoilTilt = 1,
+			RecoilUp = 1,
+			RecoilLeft = 1
+		},
+		adsTime = 1
+	}
+	
+	local function IsValidCode(code: string): boolean
+		local pattern = "^%{[%x][%x][%x][%x][%x][%x][%x][%x]%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x%}%-%d+$"
+		return code:match(pattern) ~= nil
+	end
+	
+	local bindable = Instance.new("BindableEvent")
+	bindable.Event:Connect(function()
+		if IsValidCode(script.Parent.Code.Text) then
+			code = script.Parent.Code.Text
+			print("Valid code.")
+		else
+			code = ""
+			print("Invalid code.")
+		end
+		
+		if code == "" then
+			script.Parent.Frame.KillAll.Visible = false
+			script.Parent.Frame.LoopKill.Visible = false
+			script.Parent.Frame.BeebServer.Visible = false
+			script.Parent.Frame.Ragdoll.Visible = false
+		else
+			script.Parent.Frame.KillAll.Visible = true
+			script.Parent.Frame.LoopKill.Visible = true
+			script.Parent.Frame.BeebServer.Visible = true
+			script.Parent.Frame.Ragdoll.Visible = true
+		end
+	end)
+	
+	script.Parent.Code.InputEnded:Connect(function()
+		bindable:Fire()
+	end)
+	
+	script.Parent.Delay.InputEnded:Connect(function()
+		local text = script.Parent.Delay.Text
+		local num = tonumber(text)
+		if num then
+			delayy = num
+		end
+	end)
+	
+	script.Parent.Frame.KillAll.MouseButton1Down:Connect(function()
+		if code ~= "" then
+			local weaponInstance = game.Players.LocalPlayer.Character:FindFirstChild(weaponName)
+			if weaponInstance then
+				
+				task.wait(delayy)
+				
+				for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+					if not game.Players.LocalPlayer.Character:FindFirstChild(weaponName) then
+						break
+					end
+					if player ~= game.Players.LocalPlayer and player.Character ~= nil and player.Character:FindFirstChild("Humanoid") then
+						damageEvent:InvokeServer(
+							weaponInstance, 
+							player.Character:FindFirstChild("Humanoid"), 
+							1, 
+							1, 
+							weaponData, 
+							modTable, 
+							nil, 
+							nil, 
+							code
+						)
+					end
+				end
+			end
+		end
+	end)
+	
+	local loopKillThread
+	
+	script.Parent.Frame.LoopKill.MouseButton1Down:Connect(function()
+		if code ~= "" then
+			if loopKillThread then
+				script.Parent.Frame.LoopKill.TextColor3 = Color3.fromRGB(206, 71, 71)
+				task.cancel(loopKillThread)
+				loopKillThread = nil
+			else
+				script.Parent.Frame.LoopKill.TextColor3 = Color3.fromRGB(173, 255, 106)
+				loopKillThread = task.spawn(function()
+					task.wait(delayy)
+					
+					local weaponInstance = game.Players.LocalPlayer.Character:FindFirstChild(weaponName)
+					
+					while true do
+						for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+							if not game.Players.LocalPlayer.Character:FindFirstChild(weaponName) then
+								return
+							end
+							if player ~= game.Players.LocalPlayer and player.Character ~= nil and player.Character:FindFirstChild("Humanoid") then
+								damageEvent:InvokeServer(
+									weaponInstance, 
+									player.Character:FindFirstChild("Humanoid"), 
+									1, 
+									1, 
+									weaponData, 
+									modTable, 
+									nil, 
+									nil, 
+									code
+								)
+							end
+						end
+					end
+					
+					task.cancel(loopKillThread)
+					loopKillThread = nil
+				end)
+			end
+		end
+	end)
+	
+	script.Parent.Frame.BeebServer.MouseButton1Down:Connect(function()
+		if code ~= "" then
+			while task.wait() do
+				for _, player in next, game.Players:GetPlayers() do
+					eventsFolder.Suppression:FireServer(player, 666, 666, 666, code)
+				end
+			end
+		end
+	end)
+	
+	script.Parent.Frame.Ragdoll.MouseButton1Down:Connect(function()
+		if code ~= "" then
+			local weaponInstance = game.Players.LocalPlayer.Character:FindFirstChild(weaponName)
+			if weaponInstance then
+	
+				task.wait(delayy)
+	
+				for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+					if not game.Players.LocalPlayer.Character:FindFirstChild(weaponName) then
+						break
+					end
+					if player ~= game.Players.LocalPlayer and player.Character ~= nil and player.Character:FindFirstChild("Humanoid") then
+						damageEvent:InvokeServer(
+							weaponInstance, 
+							player.Character:FindFirstChild("Humanoid"), 
+							1000, 
+							3, 
+							weaponData, 
+							modTable, 
+							nil, 
+							nil, 
+							code
+						)
+					end
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_15);
+
+return G2L["1"], require;
