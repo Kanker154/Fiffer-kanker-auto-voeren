@@ -1,0 +1,153 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 13 | Scripts: 1 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Size"] = UDim2.new(0.22193, 0, 0.18634, 0);
+G2L["2"]["Position"] = UDim2.new(0.41044, 0, 0.39317, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Main]];
+
+
+-- StarterGui.ScreenGui.Main.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Main.TopBar
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["4"]["Size"] = UDim2.new(0, 767, 0, 53);
+G2L["4"]["Position"] = UDim2.new(0.4987, 0, 0.05969, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Name"] = [[TopBar]];
+G2L["4"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Main.TopBar.Title
+G2L["5"] = Instance.new("TextLabel", G2L["4"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 39;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[Emmen Midden-Drenthe]];
+G2L["5"]["Name"] = [[Title]];
+G2L["5"]["Position"] = UDim2.new(0.4987, 0, 0.76415, 0);
+
+
+-- StarterGui.ScreenGui.Main.TopBar.Title.UITextSizeConstraint
+G2L["6"] = Instance.new("UITextSizeConstraint", G2L["5"]);
+G2L["6"]["MaxTextSize"] = 23;
+
+
+-- StarterGui.ScreenGui.Main.Loop
+G2L["7"] = Instance.new("TextButton", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(67, 67, 67);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["7"]["Size"] = UDim2.new(0.51616, 0, 0.23224, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[Loop kill]];
+G2L["7"]["Name"] = [[Loop]];
+G2L["7"]["Position"] = UDim2.new(0.49633, 0, 0.43896, 0);
+
+
+-- StarterGui.ScreenGui.Main.Loop.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
+
+
+
+-- StarterGui.ScreenGui.Main.Loop.UITextSizeConstraint
+G2L["9"] = Instance.new("UITextSizeConstraint", G2L["7"]);
+G2L["9"]["MaxTextSize"] = 23;
+
+
+-- StarterGui.ScreenGui.Main.Loop.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["7"]);
+
+
+
+-- StarterGui.ScreenGui.Main.Title
+G2L["b"] = Instance.new("TextLabel", G2L["2"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 39;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["b"]["Size"] = UDim2.new(0.78039, 0, 0.23811, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Notes : You must be holding a weapon.]];
+G2L["b"]["Name"] = [[Title]];
+G2L["b"]["Position"] = UDim2.new(0.51471, 0, 0.76998, 0);
+
+
+-- StarterGui.ScreenGui.Main.Title.UITextSizeConstraint
+G2L["c"] = Instance.new("UITextSizeConstraint", G2L["b"]);
+G2L["c"]["MaxTextSize"] = 23;
+
+
+-- StarterGui.ScreenGui.UIDragDetector
+G2L["d"] = Instance.new("UIDragDetector", G2L["1"]);
+
+
+
+-- StarterGui.ScreenGui.Main.Loop.LocalScript
+local function C_a()
+local script = G2L["a"];
+	local bu = script.Parent
+	
+	bu.MouseButton1Click:Connect(function()
+		while true do
+			for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+				if player ~= game.Players.LocalPlayer and player.Character ~= nil and player.Character:FindFirstChild("Humanoid") then
+					local args = {
+						player.Character:WaitForChild("Humanoid"),
+						48.25,
+						0,
+						0
+					}
+					game:GetService("ReplicatedStorage"):WaitForChild("ACS\203\141Engine"):WaitForChild("Eventos"):WaitForChild("Damage"):FireServer(unpack(args))
+				end
+			end
+			task.wait(0.1)
+		end
+	end)
+end;
+task.spawn(C_a);
+
+return G2L["1"], require;
