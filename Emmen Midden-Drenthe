@@ -121,8 +121,8 @@ G2L["c"] = Instance.new("UITextSizeConstraint", G2L["b"]);
 G2L["c"]["MaxTextSize"] = 23;
 
 
--- StarterGui.ScreenGui.UIDragDetector
-G2L["d"] = Instance.new("UIDragDetector", G2L["1"]);
+-- StarterGui.ScreenGui.Main.UIDragDetector
+G2L["d"] = Instance.new("UIDragDetector", G2L["2"]);
 
 
 
